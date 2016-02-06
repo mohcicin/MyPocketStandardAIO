@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TechnicienActivity" >
+<LinearLayout
+            android:id="@+id/l1"
+            style="@style/TitleBar"
+            android:layout_width="match_parent" >
+
+            <ImageButton
+                style="@style/TitleBarAction"
+                android:contentDescription="@string/description_home"
+                android:onClick="onClickHome"
+                android:src="@drawable/title_home" />
+
+            <ImageView style="@style/TitleBarSeparator" />
+
+            <TextView style="@style/TitleBarText"
+                android:text="@string/title_activity_interventionhisto" />
+
+        </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.05"
+        android:background="@drawable/legend"
+        android:orientation="vertical"
+        android:padding="10dp"
+         >
+
+        <TextView
+            android:id="@+id/labelsignature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/client_technicien"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="22dp"
+            android:text="@string/tecv2"
+            android:textDirection="anyRtl"
+            android:layoutDirection="locale" />
+
+        <com.karouani.cicin.widget.CustomAutoCompleteView
+            android:id="@+id/client_technicien"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.00"
+            android:completionThreshold="1"
+            android:dropDownHeight="150dp"
+            android:dropDownVerticalOffset="5dp"
+            android:dropDownWidth="wrap_content"
+            android:ems="10"
+            android:focusable="true"
+            android:gravity="center"
+            android:hint="--Liste des clients--"
+            android:imeOptions="actionNext"
+            android:inputType="textAutoComplete|textAutoCorrect"
+            android:layout_alignLeft="@+id/objet_tech"
+            android:layout_below="@+id/labelsignature"
+            android:singleLine="true"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <TextView
+            android:id="@+id/totaltxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/client_technicien"
+            android:text="@string/tecv3"
+             android:textDirection="anyRtl"
+            android:layoutDirection="locale" />
+
+        <Spinner
+            android:id="@+id/objet_tech"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/secondStep"
+            android:layout_below="@+id/totaltxt" />
+
+        <Button
+            android:id="@+id/secondStep"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/totaltxt"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/round_corner_drawable_2"
+            android:text="@string/tecv4" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignTop="@+id/relativeLayout2"
+        android:layout_marginLeft="18dp"
+        android:background="@android:color/white"
+        android:text="@string/tecv1" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/l1"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

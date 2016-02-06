@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+
+    <ScrollView
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" >
+
+      <LinearLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <ImageView
+        android:id="@+id/ImageViewdialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+    </LinearLayout>
+    </ScrollView>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout4sx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l2"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/imggaleriebtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="2px"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner_drawable_2"
+            android:text="galerie"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/imgcamerabtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="2px"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner_drawable_2"
+            android:text="camera"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/imgcancelbtndialog"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="2px"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner_drawable_2"
+            android:text="@string/btn_cancel"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/imguploadbtndialog"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="2px"
+            android:background="@drawable/round_corner_drawable_2"
+            android:text="upload"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/imgsuivantdbtndialog"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="2px"
+            android:layout_weight="0.41"
+            android:background="@drawable/round_corner_drawable_2"
+            android:text=">>"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

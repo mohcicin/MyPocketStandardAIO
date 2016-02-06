@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/l1"
+        style="@style/TitleBar"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="@string/description_home"
+            android:onClick="onClickHome"
+            android:src="@drawable/title_home" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="@string/title_activity_tournee_viewer" />
+
+        <Spinner
+            android:id="@+id/clndr"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/task4" />
+
+    </LinearLayout>
+    
+      <LinearLayout
+        android:id="@+id/l2"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1" 
+        android:orientation="horizontal" >
+    <ListView
+        android:id="@+id/lstour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+    >
+    </ListView>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#000000"
+     >
+    <LinearLayout
+            android:id="@+id/ll1"
+            style="@style/TitleBar"
+            android:layout_width="match_parent" >
+
+            <ImageButton
+                style="@style/TitleBarAction"
+                android:contentDescription="@string/description_home"
+                android:onClick="onClickHome"
+                android:src="@drawable/title_home" />
+
+            <ImageView style="@style/TitleBarSeparator" />
+
+            <TextView style="@style/TitleBarText"
+                android:text="@string/title_activity_settingsynchro" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/syscbtn1"
+                style="@style/SynchroBtn"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/app_dropbox"
+                android:onClick="onClickFeature"
+                android:text="@string/syscl1"
+                android:textColor="#FFFFFFFF" />
+
+            <Button
+                android:id="@+id/syscbtn2"
+                style="@style/SynchroBtn"
+                android:drawableTop="@drawable/home_tiers"
+                android:onClick="onClickFeature"
+                android:text="@string/syscl2"
+                android:textColor="#FFFFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+             <Button
+                android:id="@+id/syscbtn5"
+                style="@style/SynchroBtn"
+                android:drawableTop="@drawable/sys_minus"
+                android:onClick="onClickFeature"
+                android:text="@string/syscl5"
+                android:textColor="#FFFFFFFF" />
+
+            <Button
+                android:id="@+id/syscbtn4"
+                style="@style/SynchroBtn"
+                android:drawableTop="@drawable/home_livraison"
+                android:onClick="onClickFeature"
+                android:text="@string/syscl4"
+                android:textColor="#FFFFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/syscbtn3"
+                style="@style/SynchroBtn"
+                android:drawableTop="@drawable/sys_appdrawer"
+                android:onClick="onClickFeature"
+                android:text="@string/syscl3"
+                android:textColor="#FFFFFFFF" />
+            
+            <Button
+                android:id="@+id/syscbtn6"
+                style="@style/SynchroBtn"
+                android:drawableTop="@drawable/home_livraison"
+                android:onClick="onClickFeature"
+                android:text="@string/syscl11"
+                android:textColor="#FFFFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+   
+</RelativeLayout>
